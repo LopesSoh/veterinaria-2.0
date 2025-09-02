@@ -12,12 +12,7 @@ class Gato (Animal):
 
     #modulo de controle
     def __init__(self, nome, peso, idade, raca, cor, dono):
-        self.__nome = nome
-        self.__peso = peso
-        self.__idade = idade
-        self.__raca = raca
-        self.__cor = cor
-        self.__dono = dono
+        pass
 
     def miar (self):
         print('miau miau')
