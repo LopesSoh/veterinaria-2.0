@@ -74,6 +74,51 @@ class Animal:
         print("--- CADASTRO DE ANIMAL ---")
         print("Selecione:\n1 - Gato\n2 - Cachorro\n3 - Pássaro")
 
+    def atualizar(pets):
+        if len(pets) == 0:
+            print("Nenhum animal cadastrado!")
+            return
+
+        # Listar pets
+        for chave, valor in pets.items():
+            print(f"{chave}° - {valor.get_nome()} ({valor.get_raca()})")
+
+        # Escolher pet
+        alterar = int(input("Informe o ID do pet que deseja alterar\n--> "))
+
+        # Verificação simples sem 'not in'
+        if alterar < 1 or alterar >= Animal.id_pets:
+            print("ID inválido!")
+            return
+
+        pet = pets[alterar]
+
+        # Escolher característica
+        print("Qual característica quer alterar?")
+        print("1 - Nome\n2 - Raça\n3 - Cor\n4 - Peso\n5 - Idade\n6 - Dono")
+        caracteristica = int(input("--> "))
+
+        if caracteristica == 1:
+            pet.set_nome(input("Informe o novo nome do PET\n--> "))
+        elif caracteristica == 2:
+            pet.set_raca(input("Informe a nova raça do PET\n--> "))
+        elif caracteristica == 3:
+            pet.set_cor(input("Informe a nova cor do PET\n--> "))
+        elif caracteristica == 4:
+            pet.set_peso(input("Informe o novo peso do PET\n--> "))
+        elif caracteristica == 5:
+            pet.set_idade(input("Informe a nova idade do PET\n--> "))
+        elif caracteristica == 6:
+            pet.set_dono(input("Informe o novo dono do PET\n--> "))
+        else:
+            print("Opção inválida!")
+            return
+
+    # Listar novamente
+    print("\n=== PET ATUALIZADO ===")
+    for chave, valor in pets.items():
+        print(f"{chave}° - {valor.get_nome()} ({valor.get_raca()})")    
+
 class Gato (Animal):
     def miar (self):
         print('miau miau')
