@@ -31,7 +31,9 @@ while True:
         Animal.L_e_P()
 
     elif resp == 2:
-        Animal.listar()
+        Animal.L_e_P()
+        Animal.listar(pets)
+        Animal.L_e_P()
 
     else:
         print("Opção inválida!")

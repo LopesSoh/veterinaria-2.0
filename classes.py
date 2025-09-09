@@ -36,7 +36,7 @@ class Animal:
         Animal.pets[Animal.id_pets] = pet
         Animal.id_pets += 1
 
-    def listar():
+    def listar(pets):
         for chave, valor in Animal.items():
             print(f"{chave}° - \t{valor.getNome()}\n\t{valor.getRaca()}\n\t{valor.getCor()}\n\t{valor.getPeso()}")
 
