@@ -28,28 +28,16 @@ class Animal:
 
 
 class Gato (Animal):
-
-    #modulo de controle
-    def __init__(self, nome, peso, idade, raca, cor, dono):
-        Animal.__init__(self, nome, peso, idade, raca, cor, dono)
-
     def miar (self):
         print('miau miau')
 
 class Cachorro (Animal):
-
-    #modulo de controle
-    def __init__(self, nome, peso, idade, raca, cor, dono):
-        Animal.__init__(self, nome, peso, idade, raca, cor, dono)
     
     def miar (self):
         print('miau miau')
 
 class Passaro (Animal):
-        
-    def __init__(self, nome, peso, idade, raca, cor, dono):
-        Animal.__init__(self, nome, peso, idade, raca, cor, dono)
-
+    
     def piar (self):
         print('piu piu')
     
