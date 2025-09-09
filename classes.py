@@ -64,7 +64,7 @@ class Animal:
 
     def menu():
         print("--MENU--")
-        print(" 1 - Realizar Cadastro \n 2 - Listar Cadastrados \n 0 - Sair")
+        print(" 1 - Realizar Cadastro \n 2 - Listar Cadastrados \n 3 - Atualizar Cadastrados \n 0 - Sair")
 
     def L_e_P():
         os.system("pause")

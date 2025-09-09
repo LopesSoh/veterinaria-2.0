@@ -36,6 +36,11 @@ while True:
         Animal.listar()
         Animal.L_e_P()
 
+    elif resp == 3:
+          Animal.L_e_P()
+          Animal.atualizar()
+          Animal.L_e_P()
+
     else:
         print("Opção inválida!")
 
