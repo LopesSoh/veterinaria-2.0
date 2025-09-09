@@ -32,7 +32,7 @@ while True:
 
     elif resp == 2:
         Animal.L_e_P()
-        Animal.listar(pets)
+        Animal.pets.listar()
         Animal.L_e_P()
 
     else:
