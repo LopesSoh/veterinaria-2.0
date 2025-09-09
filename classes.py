@@ -1,4 +1,7 @@
 class Animal:
+    id_pets = 1
+    pets = {}
+
     def __init__(self, nome, peso, idade, raca, cor, dono):
         self.__nome = nome
         self.__peso = peso
@@ -37,7 +40,7 @@ class Cachorro (Animal):
         print('miau miau')
 
 class Passaro (Animal):
-    
+
     def piar (self):
         print('piu piu')
     

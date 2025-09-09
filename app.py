@@ -1,9 +1,6 @@
 from classes import*
 from func import*
 
-#dicionario dos pets
-pets = {}
-
 menu()
 resp1 = int(input("--> "))
 
