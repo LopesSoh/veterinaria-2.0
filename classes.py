@@ -48,6 +48,9 @@ class Animal:
         os.system("pause")
         os.system("cls")
 
+    def menu_cadastro():
+        print("--- CADASTRO DE ANIMAL ---")
+        print("Selecione:\n1 - Gato\n2 - Cachorro\n3 - Pássaro")
 
 class Gato (Animal):
     def miar (self):

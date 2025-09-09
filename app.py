@@ -3,6 +3,11 @@ from classes import*
 while True:
     Animal.menu()
     resp = int(input("--> "))
+    
+    if resp == 1:
+        Animal.L_e_P()
+        Animal.menu_cadastro()
+        tipo = int(input("--> "))
 
 
 
