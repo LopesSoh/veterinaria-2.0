@@ -28,6 +28,7 @@ while True:
 
         Animal.cadastro(pet)
         print("Cadastro realizado com sucesso!")
+        Animal.L_e_P()
 
     elif resp == 2:
         Animal.listar()
