@@ -16,31 +16,20 @@ while True:
         cor = input("Cor: ")
         dono = input("Nome do dono: ")
 
-
-
-
-
-
-Animal.menu()
-resp1 = int(input("--> "))
-
-while resp1 != 0:
-    if resp1 == 1:
-        limpar_e_pausar()
-        menu_cadastro()
-        tipo = int(input("--> "))
-        limpar_e_pausar()
-
-        print("Preencha as informações do animal:")
-        nome = input("Nome: ")
-        peso = input("Peso: ")
-        idade = input("Idade: ")
-        raca_ou_especie = input("Raça ou especie:")
-        cor = input("Cor: ")
-        dono = input("Nome do dono:")
-
-        cadastro(tipo, nome, peso, idade, raca_ou_especie, cor, dono)
-        print("Cadastro realizado com sucesso!")
-    
+    if tipo == 1:
+            pet = Gato(nome, peso, idade, raca, cor, dono)
+    elif tipo == 2:
+            pet = Cachorro(nome, peso, idade, raca, cor, dono)
+    elif tipo == 3:
+            pet = Passaro(nome, peso, idade, raca, cor, dono)
     else:
-        print(" ")
+        print("Tipo inválido!")
+        continue
+
+    Animal.cadastro(pet)
+    print("Cadastro realizado com sucesso!")
+
+
+
+
+
