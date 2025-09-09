@@ -9,13 +9,13 @@ while True:
         Animal.menu_cadastro()
         tipo = int(input("--> "))
 
+        Animal.L_e_P()
         nome = input("Nome: ")
         peso = input("Peso: ")
         idade = input("Idade: ")
         raca = input("Raça ou espécie: ")
         cor = input("Cor: ")
         dono = input("Nome do dono: ")
-        Animal.L_e_P()
 
         if tipo == 1:
                 pet = Gato(nome, peso, idade, raca, cor, dono)

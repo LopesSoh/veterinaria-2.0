@@ -60,7 +60,7 @@ class Animal:
 
     def listar():
         for chave, valor in Animal.pets.items():
-            print(f"{chave}° - \t{valor.get_nome()}\n\t{valor.get_raca()}\n\t{valor.get_cor()}\n\t{valor.get_peso()}")
+            print(f"{chave}° - Nome: {valor.get_nome()}\n Raça: {valor.get_raca()}\n Cor: {valor.get_cor()}\nPeso: {valor.get_peso()}")
 
     def menu():
         print("--MENU--")
