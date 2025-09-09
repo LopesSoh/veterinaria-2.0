@@ -1,3 +1,5 @@
+import os
+
 class Animal:
     id_pets = 1
     pets = {}
@@ -27,7 +29,24 @@ class Animal:
 
     def get_dono(self):
         return self.__dono
+    
 
+    #Funções
+    def cadastro(pet):
+        Animal.pets[Animal.id_pets] = pet
+        Animal.id_pets += 1
+
+    def listar():
+        for chave, valor in Animal.items():
+            print(f"{chave}° - \t{valor.getNome()}\n\t{valor.getRaca()}\n\t{valor.getCor()}\n\t{valor.getPeso()}")
+
+    def menu():
+        print("--MENU--")
+        print(" 1 - Realizar Cadastro \n 2 - Listar Cadastrados \n 0 - Sair")
+
+    def L_e_P():
+        os.system("pause")
+        os.system("cls")
 
 
 class Gato (Animal):
