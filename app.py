@@ -1,6 +1,16 @@
 from classes import*
 
-menu()
+while True:
+    Animal.menu()
+    resp = int(input("--> "))
+
+
+
+
+
+
+
+Animal.menu()
 resp1 = int(input("--> "))
 
 while resp1 != 0:
