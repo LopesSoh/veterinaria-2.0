@@ -15,6 +15,7 @@ while True:
         raca = input("Raça ou espécie: ")
         cor = input("Cor: ")
         dono = input("Nome do dono: ")
+        Animal.L_e_P()
 
         if tipo == 1:
                 pet = Gato(nome, peso, idade, raca, cor, dono)
@@ -32,7 +33,7 @@ while True:
 
     elif resp == 2:
         Animal.L_e_P()
-        Animal.pets.listar()
+        Animal.listar()
         Animal.L_e_P()
 
     else:

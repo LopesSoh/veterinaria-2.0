@@ -38,7 +38,7 @@ class Animal:
 
     def listar():
         for chave, valor in Animal.pets.items():
-            print(f"{chave}° - \t{valor.getNome()}\n\t{valor.getRaca()}\n\t{valor.getCor()}\n\t{valor.getPeso()}")
+            print(f"{chave}° - \t{valor.get_nome()}\n\t{valor.get_raca()}\n\t{valor.get_cor()}\n\t{valor.get_peso()}")
 
     def menu():
         print("--MENU--")
