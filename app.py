@@ -9,6 +9,12 @@ while True:
         Animal.menu_cadastro()
         tipo = int(input("--> "))
 
+        nome = input("Nome: ")
+        peso = input("Peso: ")
+        idade = input("Idade: ")
+        raca = input("Raça ou espécie: ")
+        cor = input("Cor: ")
+        dono = input("Nome do dono: ")
 
 
 
