@@ -16,19 +16,24 @@ while True:
         cor = input("Cor: ")
         dono = input("Nome do dono: ")
 
-    if tipo == 1:
-            pet = Gato(nome, peso, idade, raca, cor, dono)
-    elif tipo == 2:
-            pet = Cachorro(nome, peso, idade, raca, cor, dono)
-    elif tipo == 3:
-            pet = Passaro(nome, peso, idade, raca, cor, dono)
+        if tipo == 1:
+                pet = Gato(nome, peso, idade, raca, cor, dono)
+        elif tipo == 2:
+                pet = Cachorro(nome, peso, idade, raca, cor, dono)
+        elif tipo == 3:
+                pet = Passaro(nome, peso, idade, raca, cor, dono)
+        else:
+            print("Tipo inválido!")
+            continue
+
+        Animal.cadastro(pet)
+        print("Cadastro realizado com sucesso!")
+
+    elif resp == 2:
+        Animal.listar()
+
     else:
-        print("Tipo inválido!")
-        continue
-
-    Animal.cadastro(pet)
-    print("Cadastro realizado com sucesso!")
-
+        print("Opção inválida!")
 
 
 
