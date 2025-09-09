@@ -80,13 +80,13 @@ class Animal:
             return
 
         # Listar pets
-        for chave, valor in pets.items():
-            print(f"{chave}° - {valor.get_nome()} ({valor.get_raca()})")
+        for chave, valor in Animal.pets.items():
+            print(f"{chave}° - \t{valor.get_nome()}\n\t{valor.get_raca()}\n\t{valor.get_cor()}\n\t{valor.get_peso()}")
 
         # Escolher pet
         alterar = int(input("Informe o ID do pet que deseja alterar\n--> "))
 
-        # Verificação simples sem 'not in'
+        # Verificação
         if alterar < 1 or alterar >= Animal.id_pets:
             print("ID inválido!")
             return
