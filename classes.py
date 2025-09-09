@@ -11,7 +11,9 @@ class Animal:
         self.__raca = raca
         self.__cor = cor
         self.__dono = dono
-    
+
+
+#GETS    
     def get_nome(self):
         return self.__nome
 
@@ -29,6 +31,26 @@ class Animal:
 
     def get_dono(self):
         return self.__dono
+    
+
+#SETS
+    def set_nome(self, nome): 
+        self.__nome = nome
+
+    def set_peso(self, peso): 
+        self.__peso = peso
+
+    def set_idade(self, idade): 
+        self.__idade = idade
+
+    def set_raca(self, raca): 
+        self.__raca = raca
+
+    def set_cor(self, cor): 
+        self.__cor = cor
+
+    def set_dono(self, dono): 
+        self.__dono = dono
     
 
     #Funções
