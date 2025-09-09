@@ -1,5 +1,4 @@
 from classes import*
-from func import*
 
 menu()
 resp1 = int(input("--> "))
